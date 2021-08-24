@@ -8,10 +8,15 @@ java {
 }
 
 dependencies {
-    api project(path: ':annotation')
-    implementation 'com.google.auto.service:auto-service:1.0-rc2'
-    implementation 'com.squareup:javapoet:1.10.0'
-
-    implementation 'org.apache.commons:commons-lang3:3.4'
-    implementation 'org.apache.commons:commons-collections4:4.1'
+    implementation project(path: ':annotation')
+    annotationProcessor 'com.google.auto.service:auto-service:1.0-rc7'
+    implementation 'com.google.auto.service:auto-service:1.0-rc7'
+    implementation 'com.squareup:javapoet:1.13.0'
+    implementation 'org.apache.commons:commons-lang3:3.7'
+    implementation 'org.apache.commons:commons-collections4:4.2'
+    implementation 'org.ow2.asm:asm:6.0'
+    implementation 'org.ow2.asm:asm-commons:6.0'
+    implementation 'org.ow2.asm:asm-analysis:6.0'
+    implementation 'org.ow2.asm:asm-util:6.0'
+    implementation 'org.ow2.asm:asm-tree:6.0'
 }
